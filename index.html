@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonakls | WebPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./javascript/tailwind.config.js"></script>
+    <title>Jonakls | Page</title>
 </head>
-<body>
-    <h1>Welcome to my page</h1>
+<body class="h-14 bg-gradient-to-r from-[#273746] to-[#808B96]">
+    <header>
+        <nav class="bg-opacity-60 flex justify-between items-center h-14 bg-[#17202A] text-white relative shadow-sm font-mono" role="navigation">
+            <div class="pl-8">Jonathan Narvaez</div>
+
+            <div class="pr-8">
+                <a href="#" class="p-3">Home</a>
+                <a href="#" class="p-3">Projects</a>
+                <a href="#" class="p-3">About</a>
+                <a href="#" class="p-3">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto">
+        <section class="text-center p-8">
+            <h1 class="text-6xl text-white font-bold">Hello there! 👋</h1>
+            <p class="text-2xl text-white">All my projects big or small and more about me</p>
+            
+            <div class="container tenor-gif-embed mx-auto m-8" data-postid="3484507763170497045" data-share-method="host" data-aspect-ratio="2" data-width="50%">
+                <a href="https://tenor.com/view/smol-illegally-smol-cat-cute-cat-boop-gif-3484507763170497045">Smol Illegally Smol Cat GIF</a>from 
+                <a href="https://tenor.com/search/smol-gifs">Smol GIFs</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
+            <button class="bg-[#17202A] hover:bg-[#808B96] text-white font-bold py-2 px-4 rounded">Surprise</button>
+        </section>
+    </div>
+
+    <footer class="bg-opacity-60 bg-[#17202A] h-14 inset-x-0 bottom-0 absolute items-center content-center">
+        <div class="container mx-auto text-white text-center flex justify-between  relative shadow-sm" >
+            <p class="pr-8">&copy; 2024 Jonathan Narvaez (Jonakls)</p>
+            <div class="pr-8">
+                <a href="#" class="p-3">Github</a>
+                <a href="#" class="p-3">LikedIn</a>
+                <a href="#" class="p-3">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    
 </body>
 </html>
