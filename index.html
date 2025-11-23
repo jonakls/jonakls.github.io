@@ -5,49 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./javascript/tailwind.config.js"></script>
-    <title>Jonakls | Page</title>
+    <title>Jonathan's Portfolio</title>
 </head>
-<body class="h-14 bg-gradient-to-r from-[#273746] to-[#808B96]">
-    <header>
-        <nav class="bg-opacity-60 flex justify-between items-center h-14 bg-[#17202A] text-white relative shadow-sm font-mono" role="navigation">
-            <div class="pl-8">Jonathan Narvaez</div>
+<body class="bg-gradient-to-r from-[#273746] to-[#808B96]">
+<header>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-opacity-60 flex justify-between items-center h-14 bg-[#17202A] text-white shadow-sm font-mono"
+         role="navigation">
+        <div class="pl-8">Portfolio</div>
 
-            <div class="pr-8">
-                <a href="#" class="p-3">Home</a>
-                <a href="#" class="p-3">Projects</a>
-                <a href="#" class="p-3">About</a>
-                <a href="#" class="p-3">Contact</a>
+        <div class="pr-8">
+            <a href="#" class="p-3"><img src="./assets/icons/home.png" alt="Home" class="inline-block w-6 h-6 mr-2"/>Home</a>
+            <a href="#projects" class="p-3"><img src="./assets/icons/project.png" alt="Project"
+                                                 class="inline-block w-6 h-6 mr-2"/>Projects</a>
+            <a href="#skills" class="p-3"><img src="./assets/icons/skill.png" alt="Skill"
+                                               class="inline-block w-6 h-6 mr-2"/>Skills</a>
+            <a href="#contact" class="p-3"><img src="./assets/icons/contact.png" alt="Contact"
+                                                class="inline-block w-6 h-6 mr-2"/>Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!--- Presentation section --->
+<div class="container mx-auto pt-14">
+    <section class="text-center p-8">
+        <h1 class="text-6xl text-white font-bold">Hi! I'm Jonathan 👋</h1>
+        <div class="flex justify-center my-6">
+            <img src="./assets/images/profile.jpg" alt="Profile Photo"
+                 class="w-48 h-48 rounded-full border-4 border-white shadow-lg">
+        </div>
+        <p class="text-2xl text-white">Software developer with over 3 years of professional experience creating robust
+            solutions using Java and Python. Specialized in solving complex problems and developing scalable
+            applications. Currently, studying engineering at UCompensar University, with strong self-directed learning
+            skills and the ability to quickly adapt to new technologies. Proven experience working in teams and
+            communicating effectively in collaborative environments.</p>
+    </section>
+</div>
+<!--- Projects section --->
+<div class="container mx-auto pt-14">
+    <section class="text-center p-8" id="projects">
+        <h2 class="text-4xl text-white font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+                <h3 class="text-2xl text-white font-semibold mb-2">Crud Api (Express)</h3>
+                <p class="text-white mb-4">REST API with Express and Node.js that allows performing CRUD operations on a collection of users.</p>
+                <span class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm">Open Source</span>
+                <span class="inline-block bg-[#f7df1e] text-black px-4 py-1 rounded-full text-sm">JavaScript</span>
+                <span class="inline-block bg-white text-black px-4 py-1 rounded-full text-sm">ExpressJs</span>
+                <div class="mt-4">
+                    <a href="https://github.com/UniversityHomeworks/crud-api" class="bg-[#17202A] text-white px-4 py-2
+                                 rounded-lg hover:bg-white hover:text-black">View Project</a>
+                </div>
             </div>
-        </nav>
-    </header>
-
-    <div class="container mx-auto">
-        <section class="text-center p-8">
-            <h1 class="text-6xl text-white font-bold">Hello there! 👋</h1>
-            <p class="text-2xl text-white">All my projects big or small and more about me</p>
-            
-            <div class="container tenor-gif-embed mx-auto m-8" data-postid="3484507763170497045" data-share-method="host" data-aspect-ratio="2" data-width="50%">
-                <a href="https://tenor.com/view/smol-illegally-smol-cat-cute-cat-boop-gif-3484507763170497045">Smol Illegally Smol Cat GIF</a>from 
-                <a href="https://tenor.com/search/smol-gifs">Smol GIFs</a>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+                <h3 class="text-2xl text-white font-semibold mb-2">RESTSchool (Python)</h3>
+                <p class="text-white mb-4">Basic tests for academic purposes, api in python in django.</p>
+                <span class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm">Open Source</span>
+                <span class="inline-block bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Python</span>
+                <span class="inline-block bg-[#0c4b33] text-white px-4 py-1 rounded-full text-sm">Django</span>
+                <div class="mt-4">
+                    <a href="https://github.com/UniversityHomeworks/RESTSchool" class="bg-[#17202A] text-white px-4 py-2
+                                 rounded-lg hover:bg-white hover:text-black">View Project</a>
+                </div>
             </div>
-            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-
-
-            <button class="bg-[#17202A] hover:bg-[#808B96] text-white font-bold py-2 px-4 rounded">Surprise</button>
-        </section>
-    </div>
-
-    <footer class="bg-opacity-60 bg-[#17202A] h-14 inset-x-0 bottom-0 absolute items-center content-center">
-        <div class="container mx-auto text-white text-center flex justify-between  relative shadow-sm" >
-            <p class="pr-8">&copy; 2024 Jonathan Narvaez (Jonakls)</p>
-            <div class="pr-8">
-                <a href="#" class="p-3">Github</a>
-                <a href="#" class="p-3">LikedIn</a>
-                <a href="#" class="p-3">Email</a>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+                <h3 class="text-2xl text-white font-semibold mb-2">SchoolApi (Java)</h3>
+                <p class="text-white mb-4">Basic tests for academic purposes, api in java with SpringBoot Framework.</p>
+                <span class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm">Open Source</span>
+                <span class="inline-block bg-white text-black px-4 py-1 rounded-full text-sm">Java</span>
+                <span class="inline-block bg-[#6cb52d] text-white px-4 py-1 rounded-full text-sm">Spring</span>
+                <div class="mt-4">
+                    <a href="https://github.com/UniversityHomeworks/school-api" class="bg-[#17202A] text-white px-4 py-2
+                                 rounded-lg hover:bg-white hover:text-black">View Project</a>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+                <h3 class="text-2xl text-white font-semibold mb-2">Cabinetmaker App</h3>
+                <p class="text-white mb-4">E-commerce program for the sale of cabinetry furniture.</p>
+                <span class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm">Open Source</span>
+                <span class="inline-block bg-[#01589d] text-white px-4 py-1 rounded-full text-sm">Dart</span>
+                <span class="inline-block bg-[#01589d] text-white px-4 py-1 rounded-full text-sm">Flutter</span>
+                <div class="mt-4">
+                    <a href="https://github.com/UniversityHomeworks/school-api" class="bg-[#17202A] text-white px-4 py-2
+                                 rounded-lg hover:bg-white hover:text-black">View Project</a>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+                <h3 class="text-2xl text-white font-semibold mb-2">CrossManager (Maintainer)</h3>
+                <p class="text-white mb-4">CrossManager is a tool developed in Java to manage the cross-referencing of daily notifications with the Litigando monitoring database, thus allowing the marking of new movements to respective processes.</p>
+                <span class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm">Closed Source</span>
+                <span class="inline-block bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Corporative use</span>
+                <span class="inline-block bg-white text-black px-4 py-1 rounded-full text-sm">Java</span>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+                <h3 class="text-2xl text-white font-semibold mb-2">Coworking booking system</h3>
+                <p class="text-white mb-4">This project is a Coworking reservation system, which allows users to reserve a workspace in a Coworking space, as well as allowing administrators to manage reservations and workspaces..</p>
+                <span class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm">Open Source</span>
+                <span class="inline-block bg-white text-black px-4 py-1 rounded-full text-sm">Java</span>
+                <span class="inline-block bg-[#d2a513] text-white px-4 py-1 rounded-full text-sm">Apache Tomcat</span>
+                <div class="mt-4">
+                    <a href="https://github.com/jonakls/ProyectoReservaCoworking" class="bg-[#17202A] text-white px-4 py-2
+                                 rounded-lg hover:bg-white hover:text-black">View Project</a>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
+</div>
 
-    
+<!--- Skills section --->
+<div class="container mx-auto pt-14">
+    <section class="text-center p-8" id="skills">
+        <h2 class="text-4xl text-white font-bold mb-4">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg w-40">
+                <img src="./assets/icons/java.png" alt="Java Logo" class="w-12 h-12 mx-auto mb-2"/>
+                <h3 class="text-2xl text-white font-semibold mb-2">Java</h3>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg w-40">
+                <img src="./assets/icons/python.png" alt="Python Logo" class="w-12 h-12 mx-auto mb-2"/>
+                <h3 class="text-2xl text-white font-semibold mb-2">Python</h3>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg w-40">
+                <img src="./assets/icons/typescript.png" alt="TypeScript Logo" class="w-12 h-12 mx-auto mb-2"/>
+                <h3 class="text-2xl text-white font-semibold mb-2">TypeScript</h3>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg w-40">
+                <img src="./assets/icons/oracle-database.png" alt="OracleDatabase Logo" class="w-12 h-12 mx-auto mb-2"/>
+                <h3 class="text-2xl text-white font-semibold mb-2">Oracle Database</h3>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg w-40">
+                <img src="./assets/icons/mysql.png" alt="MySQL Logo" class="w-12 h-12 mx-auto mb-2"/>
+                <h3 class="text-2xl text-white font-semibold mb-2">MySQL Database</h3>
+            </div>
+        </div>
+    </section>
+</div>
+<!--- Contact section --->
+
+<div class="container mx-auto">
+    <section class="text-center p-8" id="contact">
+        <h2 class="text-4xl text-white font-bold mb-4">Contact Me</h2>
+        <form class="max-w-md mx-auto bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <input type="text" placeholder="Your Name" class="w-full p-2 rounded-lg border border-gray-300">
+            </div>
+            <div class="mb-4">
+                <input type="email" placeholder="Your Email" class="w-full p-2 rounded-lg border border-gray-300">
+            </div>
+            <div class="mb-4">
+                <textarea placeholder="Your Message" class="w-full p-2 rounded-lg border border-gray-300"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send Message
+            </button>
+        </form>
+    </section>
+</div>
+<!--- --->
+<!--- --->
+<footer class="bg-opacity-60 bg-[#17202A] h-14 mt-8">
+    <div class="container mx-auto text-white text-center flex justify-between items-center h-full px-8">
+        <p>&copy; 2025 Jonathan Narvaez (Jonakls)</p>
+        <div>
+            <!-- Github Icon -->
+            <a href="https://github.com/jonakls" class="p-3"><img src="./assets/icons/github.png" alt="Github"
+                                                                  class="inline-block w-6 h-6 mr-2"/>Github</a>
+            <a href="https://www.linkedin.com/in/jonathan-narvaez23/" class="p-3"><img src="./assets/icons/linkedin.png"
+                                                                                       alt="LinkedIn"
+                                                                                       class="inline-block w-6 h-6 mr-2"/>LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
