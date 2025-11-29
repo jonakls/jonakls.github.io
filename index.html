@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,88 @@
 <header>
     <nav class="fixed top-0 left-0 right-0 z-50 bg-opacity-60 flex justify-between items-center h-14 bg-[#17202A] text-white shadow-sm font-mono"
          role="navigation">
-        <div class="pl-8">Portfolio</div>
+        <div class="pl-4 sm:pl-8">Portfolio</div>
 
-        <div class="pr-8">
-            <a href="#" class="p-3"><img src="./assets/icons/home.png" alt="Home" class="inline-block w-6 h-6 mr-2"/>Home</a>
-            <a href="#projects" class="p-3"><img src="./assets/icons/project.png" alt="Project"
-                                                 class="inline-block w-6 h-6 mr-2"/>Projects</a>
-            <a href="#skills" class="p-3"><img src="./assets/icons/skill.png" alt="Skill"
-                                               class="inline-block w-6 h-6 mr-2"/>Skills</a>
-            <a href="#contact" class="p-3"><img src="./assets/icons/contact.png" alt="Contact"
-                                                class="inline-block w-6 h-6 mr-2"/>Contact</a>
+        <div class="hidden md:flex pr-8 space-x-4">
+            <a href="#" class="p-3 flex items-center hover:bg-white hover:bg-opacity-10 rounded transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="lucide lucide-house-icon lucide-house inline-block w-6 h-6 mr-2">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+                    <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                </svg>
+                Home
+            </a>
+            <a href="#projects" class="p-3 flex items-center hover:bg-white hover:bg-opacity-10 rounded transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="lucide lucide-presentation-icon lucide-presentation inline-block w-6 h-6 mr-2">
+                    <path d="M2 3h20"/>
+                    <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/>
+                    <path d="m7 21 5-5 5 5"/>
+                </svg>
+                Projects
+            </a>
+            <a href="#skills" class="p-3 flex items-center hover:bg-white hover:bg-opacity-10 rounded transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="lucide lucide-binary-icon lucide-binary inline-block w-6 h-6 mr-2">
+                    <rect x="14" y="14" width="4" height="6" rx="2"/>
+                    <rect x="6" y="4" width="4" height="6" rx="2"/>
+                    <path d="M6 20h4"/>
+                    <path d="M14 10h4"/>
+                    <path d="M6 14h2v6"/>
+                    <path d="M14 4h2v6"/>
+                </svg>
+                Skills
+            </a>
+            <a href="#contact" class="p-3 flex items-center hover:bg-white hover:bg-opacity-10 rounded transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="lucide lucide-mails-icon lucide-mails inline-block w-6 h-6 mr-2">
+                    <path d="M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732"/>
+                    <path d="m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5"/>
+                    <rect x="7" y="3" width="15" height="12" rx="2"/>
+                </svg>
+                Contact
+            </a>
+        </div>
+
+        <div class="flex md:hidden pr-4 space-x-2">
+            <a href="#" class="p-2 hover:bg-white hover:bg-opacity-10 rounded transition-colors" title="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+                    <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                </svg>
+            </a>
+            <a href="#projects" class="p-2 hover:bg-white hover:bg-opacity-10 rounded transition-colors" title="Projects">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h20"/>
+                    <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/>
+                    <path d="m7 21 5-5 5 5"/>
+                </svg>
+            </a>
+            <a href="#skills" class="p-2 hover:bg-white hover:bg-opacity-10 rounded transition-colors" title="Skills">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="14" y="14" width="4" height="6" rx="2"/>
+                    <rect x="6" y="4" width="4" height="6" rx="2"/>
+                    <path d="M6 20h4"/>
+                    <path d="M14 10h4"/>
+                    <path d="M6 14h2v6"/>
+                    <path d="M14 4h2v6"/>
+                </svg>
+            </a>
+            <a href="#contact" class="p-2 hover:bg-white hover:bg-opacity-10 rounded transition-colors" title="Contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732"/>
+                    <path d="m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5"/>
+                    <rect x="7" y="3" width="15" height="12" rx="2"/>
+                </svg>
+            </a>
         </div>
     </nav>
 </header>
@@ -148,24 +220,28 @@
 <div class="container mx-auto">
     <section class="text-center p-8" id="contact">
         <h2 class="text-4xl text-white font-bold mb-4">Contact Me</h2>
-        <form class="max-w-md mx-auto bg-white bg-opacity-20 p-6 rounded-lg shadow-lg" action="mailto:asmot54@hotmail.com">
-            <div class="mb-4">
-                <input type="text" placeholder="Your Name" class="w-full p-2 rounded-lg border border-gray-300" required>
+        <div class="bg-white bg-opacity-20 p-4 rounded-lg shadow-lg">
+            <p class="text-2xl text-white">
+                If you have any questions or would like to get in touch, feel free to send me a message at the email
+                below:
+            </p>
+            <div class="mt-4">
+                <a href="mailto:asmot54@hotmail.com"
+                   class="bg-[#17202A] text-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">
+                    Send Email
+                </a>
             </div>
-            <div class="mb-4">
-                <input type="email" placeholder="Your Email" class="w-full p-2 rounded-lg border border-gray-300" required>
-            </div>
-            <div class="mb-4">
-                <textarea placeholder="Your Message" class="w-full p-2 rounded-lg border border-gray-300" required></textarea>
-            </div>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send Message
-            </button>
-        </form>
+        </div>
     </section>
 </div>
 <footer class="bg-opacity-60 bg-[#17202A] h-14 mt-8">
     <div class="container mx-auto text-white text-center flex justify-between items-center h-full px-8">
-        <p>&copy; 2025 Jonathan Narvaez (Jonakls)</p>
+        <p>
+            <script>
+                const year = new Date().getFullYear();
+                document.write(`&copy; ${year} Jonathan Narvaez (Jonakls)`);
+            </script>
+        </p>
         <div>
             <!-- Github Icon -->
             <a href="https://github.com/jonakls" target="_blank" class="p-3"><img src="./assets/icons/github.png"
